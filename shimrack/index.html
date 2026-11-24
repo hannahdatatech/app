@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shimrack support</title>
+<style>
+  :root { --floor:#E7E4DC; --plate:#F7F5EF; --edge:#CBC6BB; --ink:#1B1D20; --dim:#565C64; --hivis:#F4B400; --link:#7F5300; }
+  @media (prefers-color-scheme: dark) { :root { --floor:#111316; --plate:#1C1F23; --edge:#353A41; --ink:#EDEEEF; --dim:#A3AAB2; --link:#F6C12E; } }
+  body { margin:0; background:var(--floor); color:var(--ink); font:17px/1.55 -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:28px 16px 64px; }
+  h1 { font-size:40px; font-weight:900; letter-spacing:2px; text-transform:uppercase; margin:0 0 8px; font-stretch:condensed; }
+  .stripe { height:10px; background:repeating-linear-gradient(-45deg, #F4B400 0 12px, #1B1D20 12px 24px); border-radius:2px; }
+  h2 { font-size:15px; letter-spacing:1.5px; text-transform:uppercase; margin:32px 0 10px; }
+  .lede { color:var(--dim); }
+  .plate { background:var(--plate); border:1px solid var(--edge); border-radius:6px; padding:4px 18px; }
+  dt { font-weight:700; margin-top:14px; } dd { margin:4px 0 14px; color:var(--dim); }
+  a { color:var(--link); }
+  .note { border-left:6px solid var(--hivis); padding:6px 12px; background:var(--plate); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Shimrack</h1>
+  <div class="stripe"></div>
+  <p class="lede">A valve shim calculator and planner for shim-under-bucket engines. iPhone, $2.99 once, works offline.</p>
+
+  <h2>Contact</h2>
+  <p>Email <a href="mailto:hannahdatatech@gmail.com">hannahdatatech@gmail.com</a>. Please include your iPhone model and iOS version. I usually reply within a few days.</p>
+
+  <h2>Questions</h2>
+  <div class="plate"><dl>
+    <dt>How do I set up my bike?</dt>
+    <dd>Tap <b>+</b>, give it a name, set the number of cylinders and intake and exhaust valves per cylinder, and type the clearance ranges from your service manual in mm or inches. Pick your shim step and whether to aim for the middle or the loose end of the range.</dd>
+    <dt>How is the new shim worked out?</dt>
+    <dd>New shim = shim in it + (gap measured − target gap), rounded to your shim step, choosing the size that lands inside your range closest to the target. A tight valve needs a thinner shim; a loose valve needs a thicker one.</dd>
+    <dt>What does the swap plan do?</dt>
+    <dd>It reuses shims pulled from other valves in the same check first, then the shims in your rack, and only lists the rest to buy. It finds the combination that buys the fewest shims.</dd>
+    <dt>Why does it warn about inches?</dt>
+    <dd>If a number looks about 25 times too small or too big for your spec, it was probably typed in the other unit. Shimrack leaves that valve out of the plan until you fix it.</dd>
+    <dt>Which engines does it cover?</dt>
+    <dd>Shim-under-bucket valve trains. Not screw-and-locknut adjusters, hydraulic lifters or desmodromic heads. It has no built-in specs; every number comes from your manual.</dd>
+    <dt>Where is my data?</dt>
+    <dd>Only on your iPhone, in the app's own storage, included in your normal backup. See the <a href="privacy.html">privacy policy</a>.</dd>
+  </dl></div>
+
+  <h2>Safety</h2>
+  <p class="note">Calculates from the numbers you enter. Always confirm specs and shim sizes against your service manual, measure shims with a micrometer, and recheck clearance after installing.</p>
+</main>
+</body>
+</html>
