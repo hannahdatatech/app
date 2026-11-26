@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedalscore support</title>
+<style>
+  :root { --bg:#F3EEF4; --card:#FCF9FC; --line:#DDD0E2; --ink:#22132B; --dim:#66546F; --flare:#B8264A; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#120B18; --card:#1F1528; --line:#3B2C47; --ink:#F5EDF7; --dim:#B3A2BB; --flare:#FF6F8C; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width:660px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:38px; font-weight:900; letter-spacing:-0.5px; margin:0; font-stretch:expanded; }
+  .profile { display:flex; align-items:flex-end; gap:4px; height:56px; margin:14px 0 6px; }
+  .profile span { flex:1; border-radius:6px 6px 0 0; }
+  h2 { font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--dim); margin:34px 0 10px; }
+  .lede { color:var(--dim); margin-top:4px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:6px 20px; }
+  dt { font-weight:700; margin-top:16px; } dd { margin:4px 0 16px; color:var(--dim); }
+  a { color:var(--flare); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pedalscore</h1>
+  <div class="profile" aria-hidden="true">
+    <span style="height:30%;background:#6A5FE6"></span><span style="height:50%;background:#A44FC9"></span><span style="height:70%;background:#D84E99"></span>
+    <span style="height:20%;background:#5263F0"></span><span style="height:90%;background:#F7783F"></span><span style="height:60%;background:#C945B0"></span><span style="height:28%;background:#6A5FE6"></span>
+  </div>
+  <p class="lede">An indoor cycling class planner for instructors. Plan each song with RPM, effort, position and a cue, see the ride profile, print a cue card, and teach it in big type. iPhone, $2.99 once, works offline.</p>
+
+  <h2>Contact</h2>
+  <p>Email <a href="mailto:hannahdatatech@gmail.com">hannahdatatech@gmail.com</a>. Please include your iPhone model and iOS version. I usually reply within a few days.</p>
+
+  <h2>Questions</h2>
+  <div class="card"><dl>
+    <dt>How do I build a class?</dt>
+    <dd>Tap <b>+</b> in the library and name the class. Then add one segment per song: the title and artist, the length as minutes and seconds (3:45), an RPM range, effort 1 to 10, a position and the cue you want to say. The ride profile at the top redraws after every change.</dd>
+    <dt>How do I reorder or repeat songs?</dt>
+    <dd>Swipe a song right to move it up or down, or left to duplicate or delete it. For bigger changes, tap <b>More</b> (top right) and <b>Reorder segments</b> to drag songs by their handles.</dd>
+    <dt>Does it play my music?</dt>
+    <dd>No. Pedalscore never plays, reads or connects to your music, so it works next to any music app. You type the song names you want on your card.</dd>
+    <dt>How does teach mode work?</dt>
+    <dd>Open a class and tap <b>Teach this class</b>, then <b>Start</b> when your music starts. It shows the position, RPM range, effort, the time left in the song, your cue and the next song, and keeps the screen awake. Pause, skip to the next song or go back with the buttons at the bottom.</dd>
+    <dt>How do I print a cue card?</dt>
+    <dd>In a class, tap the share button and choose <b>Cue card (PDF)</b>. It's one US Letter page with the profile and every segment. Print it or save it to Files.</dd>
+    <dt>How do I share a class or move it to a new phone?</dt>
+    <dd>Share button &gt; <b>Class file (.pedalscore)</b>, then AirDrop it, mail it or save it to Files. On the other iPhone, open the file (or use the import button in the library) and the class is added. The file is plain readable text (JSON). Your classes are also included in your normal iPhone backup.</dd>
+    <dt>What does effort mean?</dt>
+    <dd>It's your own 1 to 10 scale for how hard a segment should feel. Pedalscore gives no health, heart-rate or training advice.</dd>
+  </dl></div>
+
+  <h2>Privacy</h2>
+  <p>No account, no network connections, no ads, no tracking. Read the <a href="privacy.html">privacy policy</a>.</p>
+</main>
+</body>
+</html>
